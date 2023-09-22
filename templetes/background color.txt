@@ -1,0 +1,10 @@
+background: linear-gradient(to right bottom, 
+rgb(166, 138, 115) 0%, rgb(109, 87, 69) 100%) 100% center no-repeat;
+
+https://www.color-hex.com/color/3e65cf
+
+animation
+https://animate.style/
+
+logo
+https://looka.com/explore

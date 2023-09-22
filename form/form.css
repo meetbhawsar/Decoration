@@ -1,0 +1,114 @@
+*{
+	margin: 00px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+section{
+	position: relative;
+	/*border: 2px solid black;*/
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+section .image{
+	position: relative;
+	width: 50%;
+	height: 100vh;
+}
+section .image img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height:100vh;
+
+}
+section .content{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+	align-items: center
+}
+section .content .form-box{
+	width: 50%;
+}
+section .content .form-box h1{
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+section .content .form-box .inputbx{
+	margin-bottom: 20px;
+
+}
+section .content .form-box .inputbx span{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	font-weight: 300;	
+}
+section .content .form-box .inputbx input{
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background: transparent;
+
+}
+.button input{
+	align-content: end;
+	background: #64485C;
+	cursor: pointer;
+	border-radius: none;
+	font-weight: 500;
+}
+#submit{
+	background: #64485C;
+	cursor: pointer;
+	border-radius: none;
+	font-weight: 500;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#submit:hover{
+	background: #64485C;
+}
+.remember{
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.inputbx p a{
+	color:#64485C ;
+}
+@media (max-width: 768px){
+	section .image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	section .content{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+	}
+	section .content .form-box{
+		width: 50%;
+		padding: 40px;
+		background: rgb(255, 255, 255 );
+	}
+	section.button {
+		display: block;
+	}
+
+}

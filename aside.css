@@ -1,0 +1,566 @@
+.section3{
+    height: auto;
+     display:flex;
+      justify-content: space-around;
+        flex-wrap: wrap;
+         /*background: #d4b6be;*/
+}
+ .section3 p{
+    height: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+   margin: 20px;
+  
+}
+
+.vendor{
+   margin-top: 30px;
+   margin-left: 20px;
+   margin-right: 50px;
+   margin-bottom: 40px;
+  /* margin-right: 100px;*/
+   display:flex;
+   float: left;
+   align-content: center;
+    justify-content: space-around;
+   
+}
+.box{
+   height: 300px;
+   box-shadow: 5px 5px 20px black;
+   overflow: hidden;
+}
+.box img{
+   height:300px ;
+   width: 350px;
+   border-radius: 3px;
+   transition: .5s;
+}
+.info{
+
+   height: 70px;
+   width: 350px;
+   padding: 6px;
+   box-sizing: border-box;
+   position: absolute;
+   background: rgba(27, 27, 27, .5);
+   color: white;
+   transition: .5s;
+   
+}
+.info h1 {
+   text-align: center;
+   margin: 10px;
+   font-size: 30px;
+}
+.info p {
+   font-size: 20px;
+   opacity: 0;
+   text-align: start;
+   visibility: hidden;
+}
+.info span{
+   font-weight: bold;
+}
+.info button{
+   font-size: 20px;
+   cursor: pointer;
+   padding: 5px;
+   font-weight: 500;
+   border: solid  #F54768 ;
+   background: #F54768;
+   margin-left: 120px;
+   opacity: 0;
+   visibility: hidden;
+}
+.box:hover{
+   cursor: pointer;
+}
+.info:hover{
+   height: 300px;
+   background: rgba(27, 27, 27, .5);
+   backdrop-filter: blur(5px);
+}
+.info:hover p {
+   opacity: 1;
+   visibility: visible;
+}
+.info:hover button{
+   opacity: 1;
+   visibility: visible;
+}
+
+   .section3 .vendor .box .info
+   {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0; left: 0;
+       width:300px;
+    height: 280px;
+    /*background: #fff;*/
+    text-align: center;
+   }
+   @media  ( max-width: 500px){
+      .container{
+         grid-template-areas: 
+            "nav nav nav nav"
+            "main main main main"
+            "section section section section"
+            "section2 section2 section2 section2 "
+            "section3 section3 section3 section3"
+            "section4 section4 section4 section4"
+            "section5 section5 section5 section5"
+            "footer footer footer footer";
+   }
+   .section3 p{
+      display: inline-block;
+      margin-left: 40px;
+      font-size: 30px;
+      font-weight: bold;
+   }
+   .box{
+      margin-left: 30px;
+      height: 250px;
+      width: 300px;
+
+   }
+   .box img{
+        height: 250px;
+      width: 300px;
+      margin: 0px;
+   }
+  /* .box img:hover{
+      filter: blur(10px);
+   }*/
+   .info{
+      margin-left: 30px;
+   height: 70px;
+   width: 300px;
+   padding: 6px;
+   }
+   .info:hover{
+   height:250px;
+
+}
+      .vendor{
+         display: inline-flex;
+         flex-wrap: wrap;
+
+      }
+   }
+
+
+   /*--------------------------section4-----------------------*/
+.section4{
+  
+     display:flex;
+      justify-content: space-around;
+        flex-wrap: wrap;
+}
+.section4 h1{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+   margin: 20px;
+  
+}
+.section4 p{
+   font-size: 20px;
+   font-weight: 500;
+   padding: 3px;
+   margin-bottom: 5px;
+}
+.section4  img{
+   margin-top: 20px;
+   width: 140px;
+   height: 140px;
+   border-radius: 80px;
+}
+.teams{
+   display: flex;
+   flex-wrap: wrap;
+}
+.teams h5{
+   font-weight: 500;
+}
+.teams div{
+         
+         margin: auto 100px 60px auto;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+      height:350px;
+       width:280px;
+       height:auto;
+       background-color: #fff;
+       border-radius: 10px;
+       align-items: center;
+          
+}
+ @media  ( max-width: 500px){
+      .container{
+         grid-template-areas: 
+            "nav nav nav nav"
+            "main main main main"
+            "section section section section"
+            "section2 section2 section2 section2 "
+            "section3 section3 section3 section3"
+            "section4 section4 section4 section4"
+            "section5 section5 section5 section5"
+            "footer footer footer footer";
+   }
+   .section4{
+      display: block;
+   }
+   .section4 h1{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+   margin: 5px;
+   
+  
+}
+.teams{
+   display: block;
+}
+.teams div{
+         
+         /*margin: auto 80px 60px auto;*/
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+      height:260px;
+       width:280px;
+       height:auto;
+       background-color: #fff;
+       border-radius: 10px;
+       align-items: center;
+       margin-left:10px;
+
+          
+}
+}
+
+/*----------------------------------section5--------------*/
+.section5{
+   display: flex;
+   flex-wrap: wrap;
+  /* background: #d4b6be;*/
+  background: #fff;
+}
+.underline1{
+   width: 50%;
+   height: 3px;
+   background: #64485C;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   border-radius: 3px;
+   margin-left: 220px;
+}
+.clients{
+   margin-top: 20px;
+   display: flex;
+  
+}
+
+.section5 h1{
+   font-size: 50px;
+     height: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.image #img1{
+         /* border: 2px solid black;*/
+           width: auto;
+           height: 500px;
+           /*top right bottom left*/
+          margin-left: 20px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+
+}
+
+
+.client{
+            /*border: 2px solid black;*/
+            display: flex;
+         }
+         .left{
+            /*border: 2px solid red;*/
+            width: 300px;
+            height: 400px;
+            margin: 30px;
+            background: #d4b6be;
+            /*background: #906885;*/
+            /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            /*box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;*/
+            /*box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;*/
+
+
+         }
+         .left img{
+            width: 200px;
+            /*height: 220px;*/
+            height: auto;
+            margin: 280px 40px 0px 50px ;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         }
+         .right{
+            /*border: 2px solid blue;*/
+             /*top right bottom left*/
+            margin: 130px -200px 60px  auto;
+            width: 400px;
+            height: 150px;
+            background: rgba(255, 255, 255, .0);
+            z-index: 1;
+            /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+         }
+         .right p{
+            font-size: 25px;
+            font-weight: 500;
+         }
+         .client2{
+            /*border: 2px solid black;*/
+            display: flex;
+            margin-left: 0px;
+            width: 650px;
+         }
+          .right1{
+            margin: 100px auto 60px  -200px ;
+            width: 450px;
+            height: 120px;
+            background: rgba(255, 255, 255, .0);
+             font-size: 25px;
+            font-weight: 500;
+
+           
+         }
+          .left1{            
+            width: 350px;
+            height: 650px;
+            /*top right bottom left*/
+            margin: 20px auto 40px auto;
+            background: #d4b6be;            
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;            
+         }
+          .left1 img{
+            width: 362px;
+             height: 324px;
+             margin-left: 33px;
+         
+            /*width: auto;*/
+            /*height: 220px;*/
+            /*height: 300px;*/
+            margin: 260px 100px 100px 140px ;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         }
+         .image #img2{
+         /* border: 2px solid black;*/
+           width: auto;
+           height: 550px;
+           /*top right bottom left*/
+          margin-left: 20px;
+          margin-right: auto;
+          margin-bottom: 50px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+
+}
+ @media  ( max-width: 500px){
+      .container{
+         grid-template-areas: 
+            "nav nav nav nav"
+            "main main main main"
+            "section section section section"
+            "section2 section2 section2 section2 "
+            "section3 section3 section3 section3"
+            "section4 section4 section4 section4"
+            "section5 section5 section5 section5"
+            "footer footer footer footer";
+   }
+   .section5{
+      display: block;
+   }
+   .clients{
+      display: block;
+   }
+   .underline1{
+   width: 50%;
+   margin-left: 80px;
+}
+.section5 h1{
+   font-size: 40px;
+}
+
+.image #img1{
+         
+           width: auto;
+           height: 200px;
+          margin-left: 20px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+}
+   .client{
+            
+            display:flex;
+         }
+         .left{
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            margin-top: auto;
+         }
+         .left img{
+            width: 100px;
+            height: auto;
+            margin: 250px 40px 0px 50px ;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         }
+         .right{
+            margin: 50px -175px 60px  auto;
+            width: 200px;
+            height: 100px;
+            z-index: 1;
+         }
+          .right p{
+            font-size: 19px;
+         }
+         .client2{
+            display: flex;
+            margin-left: 0px;
+            width: 200px;
+         }
+          .right1{
+             margin: 50px -80px 60px -180px;
+            /*width: 200px;*/
+            height: 100px;
+            z-index: 1;
+            /*border: 2px solid red;*/
+           /* margin: 50px auto 60px  -120px ;
+            width: auto;
+            height: 100px;
+             font-size: 19px;
+             z-index: 1;*/
+         }
+         .right1 p{
+            font-size: 18px;
+         }
+          .left1{            
+             width: 200px;
+            height: 350px;
+            margin: 30px;
+            margin: 20px auto 40px auto;
+            background: #d4b6be;            
+                        
+         }
+          .left1 img{
+            width: 150px;
+             height: auto;
+             margin-left: 33px;
+              margin: 175px 50px 50px 100px ;
+           
+            
+         }
+         .image #img2{
+         
+           width: auto;
+           height: 250px;
+          margin-left: 20px;
+          margin-right: auto;
+          margin-bottom: 50px;
+
+}
+}
+
+
+
+
+
+/*------footer--------*/
+footer{
+   background: url('./form/footer\ \(2\).jpg');
+}
+
+.footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   /*background:#64485C*/
+ 
+ background: rgba(0, 0, 0, .5);
+   /*background: url('file:///F:/HTML/home%20work/footer%20(2).jpg');*/
+   /*opacity: 0.9;*/
+
+}
+ul{
+   list-style: none;
+}
+.heading{
+
+   font-size: 20px;
+   font-weight: bold;
+   /*opacity: 2;*/
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   /*opacity: 2;*/
+    
+}
+.underline{
+   width: 4%;
+   height: 5px;
+   background: black;
+   border-radius: 3px;
+   position: absolute;
+
+}
+#home1 li{
+   margin-top: 5px;
+     padding: 5px;
+}
+#home1 li a:hover{
+   /*background: #fff;*/
+    background: #d4b6be;
+   border-radius: 2px;
+   padding: 3px 8px;
+}
+
+#home2 li{
+   margin-top: 2px;
+   padding: 4px;
+   margin-bottom: 6px;
+}
+#home3 li{
+   margin-bottom: 9px;
+     /*padding: 2px;*/
+}
+footer i{
+   /*border: 2px solid red;*/
+   margin:15px 5px auto auto;
+}
+ @media  ( max-width: 500px){
+      .container{
+         grid-template-areas: 
+            "nav nav nav nav"
+            "main main main main"
+            "section section section section"
+            "section2 section2 section2 section2 "
+            "section3 section3 section3 section3"
+            "section4 section4 section4 section4"
+            "section5 section5 section5 section5"
+            "footer footer footer footer";
+   }
+}
+
+
+  
+
+
