@@ -305,8 +305,7 @@
          }
          .left img{
             width: 200px;
-            /*height: 220px;*/
-            height: auto;
+            height: 220px;
             margin: 280px 40px 0px 50px ;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
          }
